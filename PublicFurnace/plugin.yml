@@ -1,7 +1,7 @@
 name: PublicFurnace
 main: com.github.CubieX.PublicFurnace.PublicFurnace
 author: CubieX
-softdepend:
+softdepend: [PermissionsEx, zPermissions, bPermissions, PermissionsBukkit]
 version: 1.0.0
 description: Privatizes furnaces as long as a player is using it
 

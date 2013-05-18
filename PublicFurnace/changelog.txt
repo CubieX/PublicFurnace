@@ -1,5 +1,7 @@
 Changelog for PublicFurnace by CubieX
 -------------------------------------
+V1.0.1
+- added most common permissions plugins to soft-dependencies
 
 V.1.0.0
 - Initial version
