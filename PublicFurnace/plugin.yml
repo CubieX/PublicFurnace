@@ -1,0 +1,19 @@
+name: PublicFurnace
+main: com.github.CubieX.PublicFurnace.PublicFurnace
+author: CubieX
+softdepend:
+version: 1.0.0
+description: Privatizes furnaces as long as a player is using it
+
+commands:
+    pf:
+      description: Using Blessed      
+      usage: /pf version | reload | help
+
+permissions:
+    publicfurnace.manage:
+        description: Grants ability to create and break signs to define or delete a public furnace
+        default: op
+    publicfurnace.admin:
+        description: Allows total control over the plugin
+        default: op

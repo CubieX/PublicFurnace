@@ -1,0 +1,5 @@
+Changelog for PublicFurnace by CubieX
+-------------------------------------
+
+V.1.0.0
+- Initial version
