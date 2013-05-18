@@ -41,7 +41,7 @@ public class PFConfigHandler
       config = plugin.getConfig(); // new assignment necessary when returned value is assigned to a variable or static field(!)
       plugin.readConfigValues();
 
-      if(PublicFurnace.language == "de"){sender.sendMessage(PublicFurnace.logPrefix + plugin.getDescription().getName() + " " + plugin.getDescription().getVersion() + " neu geladen!");}
-      if(PublicFurnace.language == "en"){sender.sendMessage(PublicFurnace.logPrefix + plugin.getDescription().getName() + " " + plugin.getDescription().getVersion() + " reloaded!");}
+      if(PublicFurnace.language.equals("de")){sender.sendMessage(PublicFurnace.logPrefix + plugin.getDescription().getName() + " " + plugin.getDescription().getVersion() + " neu geladen!");}
+      if(PublicFurnace.language.equals("en")){sender.sendMessage(PublicFurnace.logPrefix + plugin.getDescription().getName() + " " + plugin.getDescription().getVersion() + " reloaded!");}
    } 
 }

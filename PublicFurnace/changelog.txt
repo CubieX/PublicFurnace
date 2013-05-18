@@ -1,5 +1,8 @@
 Changelog for PublicFurnace by CubieX
 -------------------------------------
+V1.0.2
+- fixed language management
+
 V1.0.1
 - added most common permissions plugins to soft-dependencies
 

@@ -82,10 +82,10 @@ public class PFEntityListener implements Listener
                   {
                      // block access
                      e.setCancelled(true);
-                     if(PublicFurnace.language == "de"){e.getPlayer().sendMessage(ChatColor.GOLD + "Dieser oeffentliche Ofen ist momentan gesperrt durch " + ChatColor.GREEN + lockedFurnaces.get(key) + "\n" +
+                     if(PublicFurnace.language.equals("de")){e.getPlayer().sendMessage(ChatColor.GOLD + "Dieser oeffentliche Ofen ist momentan gesperrt durch " + ChatColor.GREEN + lockedFurnaces.get(key) + "\n" +
                            ChatColor.GOLD + "Bitte versuche es nochmal, wenn er fertig ist mit Schmelzen.");}
                      
-                     if(PublicFurnace.language == "en"){e.getPlayer().sendMessage(ChatColor.GOLD + "This public furnace is currently locked by " + ChatColor.GREEN + lockedFurnaces.get(key) + "\n" +
+                     if(PublicFurnace.language.equals("en")){e.getPlayer().sendMessage(ChatColor.GOLD + "This public furnace is currently locked by " + ChatColor.GREEN + lockedFurnaces.get(key) + "\n" +
                            ChatColor.GOLD + "Please try again, when he has finished his smelting.");}
                   }
                }
@@ -118,20 +118,20 @@ public class PFEntityListener implements Listener
 
             if(e.getPlayer().getWorld().getBlockAt(e.getBlock().getX(), e.getBlock().getY() - 1, e.getBlock().getZ()).getType() == Material.FURNACE)
             {              
-               if(PublicFurnace.language == "de"){e.getPlayer().sendMessage(ChatColor.GREEN + "Oeffentlicher Ofen wurde erstellt!");}
-               if(PublicFurnace.language == "en"){e.getPlayer().sendMessage(ChatColor.GREEN + "Public furnace has been created!");}               
+               if(PublicFurnace.language.equals("de")){e.getPlayer().sendMessage(ChatColor.GREEN + "Oeffentlicher Ofen wurde erstellt!");}
+               if(PublicFurnace.language.equals("en")){e.getPlayer().sendMessage(ChatColor.GREEN + "Public furnace has been created!");}               
             }
             else
             {
-               if(PublicFurnace.language == "de"){e.getPlayer().sendMessage(ChatColor.GOLD + "Bitte setze einen Ofen unter dieses Schild!");}
-               if(PublicFurnace.language == "en"){e.getPlayer().sendMessage(ChatColor.GOLD + "Pleace place a furnace below this sign!");}               
+               if(PublicFurnace.language.equals("de")){e.getPlayer().sendMessage(ChatColor.GOLD + "Bitte setze einen Ofen unter dieses Schild!");}
+               if(PublicFurnace.language.equals("en")){e.getPlayer().sendMessage(ChatColor.GOLD + "Pleace place a furnace below this sign!");}               
             }
          }
          else
          {
             condtitionsOK = false;
-            if(PublicFurnace.language == "de"){e.getPlayer().sendMessage(ChatColor.RED + "Du hast keine Rechte um PublicFurnace-Schilder zu erstellen!");}
-            if(PublicFurnace.language == "en"){e.getPlayer().sendMessage(ChatColor.RED + "You have no permission to create PublicFurnace signs!");}            
+            if(PublicFurnace.language.equals("de")){e.getPlayer().sendMessage(ChatColor.RED + "Du hast keine Rechte um PublicFurnace-Schilder zu erstellen!");}
+            if(PublicFurnace.language.equals("en")){e.getPlayer().sendMessage(ChatColor.RED + "You have no permission to create PublicFurnace signs!");}            
          }
 
          if(!condtitionsOK)
@@ -162,8 +162,8 @@ public class PFEntityListener implements Listener
             else
             {
                e.setCancelled(true);
-               if(PublicFurnace.language == "de"){e.getPlayer().sendMessage(ChatColor.RED + "Du hast keine Rechte um PublicFurnace-Schilder zu zerstoeren!");}
-               if(PublicFurnace.language == "en"){e.getPlayer().sendMessage(ChatColor.RED + "You have no permission to destroy PublicFurnaces signs!");}               
+               if(PublicFurnace.language.equals("de")){e.getPlayer().sendMessage(ChatColor.RED + "Du hast keine Rechte um PublicFurnace-Schilder zu zerstoeren!");}
+               if(PublicFurnace.language.equals("en")){e.getPlayer().sendMessage(ChatColor.RED + "You have no permission to destroy PublicFurnaces signs!");}               
             }
          }
       }   
@@ -198,8 +198,8 @@ public class PFEntityListener implements Listener
                else
                {
                   e.setCancelled(true);
-                  if(PublicFurnace.language == "de"){e.getPlayer().sendMessage(ChatColor.RED + "Du hast keine Rechte um oeffentliche Oefen zu zerstoeren!");}
-                  if(PublicFurnace.language == "en"){e.getPlayer().sendMessage(ChatColor.RED + "You have no permission to destroy public furnaces!");}                  
+                  if(PublicFurnace.language.equals("de")){e.getPlayer().sendMessage(ChatColor.RED + "Du hast keine Rechte um oeffentliche Oefen zu zerstoeren!");}
+                  if(PublicFurnace.language.equals("en")){e.getPlayer().sendMessage(ChatColor.RED + "You have no permission to destroy public furnaces!");}                  
                }
             }
          }

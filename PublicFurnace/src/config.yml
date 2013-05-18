@@ -3,4 +3,5 @@ config_version: 1
 # Enable debug output
 debug: false
 # set locale for user dialog messages
+# Curretly supported: English = de, German = de
 language: en
